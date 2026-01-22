@@ -55,6 +55,7 @@ public class PracticalTest02v10MainActivity extends AppCompatActivity {
         startServer.setOnClickListener((v) -> {
             Server server = new Server(Integer.parseInt(port.getText().toString()));
             server.start();
+            Log.d(TAG, "Server Started on port " + port.getText().toString());
         });
 
         connect.setOnClickListener((v) -> {
